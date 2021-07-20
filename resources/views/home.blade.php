@@ -1,3 +1,11 @@
-<x-layout>
-  <h1>Сёстры Солонко</h1>
-</x-layout>
+<x-layout.base title="My title">
+
+  <main class="main container text-center">
+    <div><b>Новая коллекция</b></div>
+
+    <h2>Spring 2021</h2>
+
+    <a class="btn btn-link" href="/spring-2021">Смотреть всю коллекцию</a>
+  </main>
+
+</x-layout.base>
