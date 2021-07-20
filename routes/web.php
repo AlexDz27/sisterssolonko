@@ -9,9 +9,12 @@ Route::get('/', function() {
   return view('home', ['message' => $message]);
 });
 
-// TODO: should be a generic template with dresses data hydrated (?)
 Route::get('/spring-2021', function() {
   $dresses = Dress::all();
 
   return view('pages/spring-2021', ['dresses' => $dresses]);
+});
+
+Route::get('/cart', function() {
+  return view('pages/cart');
 });

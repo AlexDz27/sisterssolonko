@@ -2,10 +2,11 @@ const addToCartButtons = document.querySelectorAll('#addToCartButton');
 
 addToCartButtons.forEach((button) => {
   button.addEventListener('click', (evt) => {
-    const dress = evt.target.dataset.dress;
+    const chosenDressId = Number(evt.target.dataset.dressId);
+    const chosenDress = window.dresses.find(dress => dress.id === chosenDressId);
 
-    console.log(dress)
+    window.cart.items.push(chosenDress);
 
-    // localStorage.setItem('cart')
+    localStorage.setItem('cart', JSON.stringify(window.cart));
   });
 });
