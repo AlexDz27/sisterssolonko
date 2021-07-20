@@ -2,13 +2,12 @@
 
   <main class="main container text-center">
     <ul>
-      <li>
-        <a href="#">Платье 1</a>
-      </li>
-
-      <li>
-        <a href="#">Платье 2</a>
-      </li>
+      @foreach ($dresses as $dress)
+        <li>
+          <a href="#">{{ $dress->name }}</a>
+          <button id="addToCartButton" data-dress="@json($dress, JSON_UNESCAPED_UNICODE, JSON_HEX_APOS)" type="button">В корзину</button>
+        </li>
+      @endforeach
     </ul>
   </main>
 
