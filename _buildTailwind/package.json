@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {},
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {}
+    }
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}
