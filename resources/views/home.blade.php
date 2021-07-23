@@ -1,6 +1,6 @@
 <x-layout.base title="My title">
 
-  <main>
+  <main class="px-44">
     <div><b>Новая коллекция</b></div>
 
     <h2>Spring 2021</h2>

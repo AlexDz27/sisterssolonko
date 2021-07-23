@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+{{--  <link rel="stylesheet" href="/css/styles.css">--}}
+{{--  <script defer src="/js/init.js"></script>--}}
+{{--  <script defer src="/js/app.js"></script>--}}
+
   <link rel="stylesheet" href="/css/styles.css">
-  <script defer src="/js/init.js"></script>
-  <script defer src="/js/app.js"></script>
+  <script defer src="/js/bundle.js"></script>
+
   <title>Сёстры Солонко</title>
 </head>
 <body>
