@@ -1,0 +1,44 @@
+@use '../../variables';
+
+.button-look-at-dresses {
+  border-radius: 9999px;
+  background-color: white;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  text-align: center;
+  color: variables.$black;
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: variables.$white;
+    color: variables.$black;
+  }
+
+  &:hover .button-look-at-dresses__text::after {
+    width: 100%;
+  }
+}
+
+.button-look-at-dresses__text {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    height: 1px;
+    width: 0;
+    background-color: black;
+
+    transition: width 300ms;
+  }
+}

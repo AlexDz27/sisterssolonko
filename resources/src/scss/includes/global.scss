@@ -2,6 +2,8 @@
 
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: variables.$font-size;
+  margin: 0;
   background-color: variables.$bg-color;
   color: variables.$font-color;
 }
@@ -9,8 +11,16 @@ body {
 a {
   color: variables.$font-color;
   font-weight: lighter;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
 }
 
-.some {
-  color: green;
+button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
 }
