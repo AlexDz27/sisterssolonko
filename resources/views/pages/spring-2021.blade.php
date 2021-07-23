@@ -1,6 +1,6 @@
 <x-layout.base title="My title">
 
-  <main class="main container text-center">
+  <main>
     <ul>
       @foreach ($dresses as $dress)
         <li>
