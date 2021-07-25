@@ -1,0 +1,28 @@
+.growing-underline {
+  display: inline-block;
+
+  &::after {
+    content: '';
+
+    display: block;
+
+    width: 0;
+    height: 2px;
+
+    background-color: black;
+
+    transition: width .3s;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.growing-underline--white {
+  &::after {
+    background-color: white;
+  }
+}

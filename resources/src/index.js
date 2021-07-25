@@ -1,3 +1,6 @@
 import './scss/index.scss';
 
-console.log(123213)
+// const growingUnderline = document.querySelector('.growing-underline');
+// growingUnderline.addEventListener('transitionend', () => {
+//   growingUnderline.classList.toggle('js-growing-underline--not-visible');
+// })

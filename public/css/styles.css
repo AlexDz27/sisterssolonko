@@ -45,6 +45,7 @@ a {
   color: #cacaca;
   font-weight: lighter;
   text-decoration: none;
+  transition: color 0.3s;
 }
 a:hover {
   color: white;
@@ -55,6 +56,29 @@ button {
   border: none;
   color: inherit;
   cursor: pointer;
+}
+
+.section-with-bar {
+  border-bottom: 1px solid #cacaca;
+}
+
+.growing-underline {
+  display: inline-block;
+}
+.growing-underline::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s;
+}
+.growing-underline:hover::after {
+  width: 100%;
+}
+
+.growing-underline--white::after {
+  background-color: white;
 }
 
 .burger {
@@ -97,24 +121,22 @@ button {
   background-color: #cacaca;
   color: #1d1d1d;
 }
-.button-look-at-dresses:hover .button-look-at-dresses__text::after {
+.button-look-at-dresses:hover .growing-underline::after {
   width: 100%;
 }
 
-.button-look-at-dresses__text {
-  position: relative;
-}
-.button-look-at-dresses__text::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 1px;
-  width: 0;
-  background-color: black;
-  transition: width 300ms;
+.header__col {
+  width: 113px;
 }
 
-.header__section-with-bar {
-  border-bottom: 1px solid #cacaca;
+.main {
+  min-height: 600px;
+  background-image: url("/img/spring-2021.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.footer__legal-info {
+  font-size: 9px;
 }

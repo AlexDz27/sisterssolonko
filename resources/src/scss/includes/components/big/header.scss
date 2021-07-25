@@ -1,9 +1,3 @@
-@use '../../variables';
-
-@import '../small/burger';
-@import '../small/button-user-interaction';
-@import '../small/button-look-at-dresses';
-
-.header__section-with-bar {
-  border-bottom: 1px solid variables.$white;
+.header__col {
+  width: 113px;
 }

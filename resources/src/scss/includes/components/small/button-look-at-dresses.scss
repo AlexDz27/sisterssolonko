@@ -21,24 +21,7 @@
     color: variables.$black;
   }
 
-  &:hover .button-look-at-dresses__text::after {
+  &:hover .growing-underline::after {
     width: 100%;
-  }
-}
-
-.button-look-at-dresses__text {
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    height: 1px;
-    width: 0;
-    background-color: black;
-
-    transition: width 300ms;
   }
 }
