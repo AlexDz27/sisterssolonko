@@ -4,9 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Dress;
 
 Route::get('/', function() {
-  $message = 'zxczxczxc';
+  $dresses = Dress::all();
 
-  return view('home', ['message' => $message]);
+  return view('home', ['dresses' => $dresses]);
 });
 
 Route::get('/spring-2021', function() {

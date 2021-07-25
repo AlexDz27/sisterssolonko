@@ -17,6 +17,8 @@ class CreateDressesTable extends Migration
       $table->id();
 
       $table->string('name');
+      $table->string('image');
+      $table->boolean('in_stock');
 
       $table->timestamps();
     });

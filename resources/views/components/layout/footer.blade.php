@@ -1,14 +1,14 @@
 <footer class="container mx-auto pt-20">
   <div class="text-center">
     <a href="/">
-      <img src="/img/logo.png" alt="Логотип 'Сёстры Солонко'" height="120">
+      <img src="/images/logo.png" alt="Логотип 'Сёстры Солонко'" height="120">
     </a>
   </div>
 
   <nav class="flex justify-center space-x-6 mb-12">
-    <a href="#">Контакты</a>
-    <a href="#">Доставка и оплата</a>
-    <a href="#">Каталог</a>
+    <a class="growing-underline" href="#">Контакты</a>
+    <a class="growing-underline" href="#">Доставка и оплата</a>
+    <a class="growing-underline" href="#">Каталог</a>
   </nav>
 
   <nav class="flex justify-center space-x-6 mb-12">
@@ -22,11 +22,13 @@
   </nav>
 
   <section class="mb-12 text-center">
-    <a href="callto:+375333829873">Позвонить: +375 (33) 382-98-73</a>
+    <a href="callto:+375333829873">Позвонить нам: +375 (33) 382-98-73</a>
   </section>
 
   <section class="pb-12 mb-12 text-center section-with-bar">
-    <a class="growing-underline growing-underline--white" href="callto:+375333829873">Обратный звонок</a>
+    <button type="button">
+      Заказать обратный звонок
+    </button>
   </section>
 
   <section class="footer footer__legal-info mb-12 text-center">

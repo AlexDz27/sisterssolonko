@@ -26,7 +26,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/index.scss */ \"./resources/src/scss/index.scss\");\n\r\n\r\n// const growingUnderline = document.querySelector('.growing-underline');\r\n// growingUnderline.addEventListener('transitionend', () => {\r\n//   growingUnderline.classList.toggle('js-growing-underline--not-visible');\r\n// })\n\n//# sourceURL=webpack:///./resources/src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/index.scss */ \"./resources/src/scss/index.scss\");\n/* harmony import */ var _js_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/home */ \"./resources/src/js/home.js\");\n\r\n\r\n\n\n//# sourceURL=webpack:///./resources/src/index.js?");
+
+/***/ }),
+
+/***/ "./resources/src/js/components/Preview.js":
+/*!************************************************!*\
+  !*** ./resources/src/js/components/Preview.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Preview\": () => (/* binding */ Preview)\n/* harmony export */ });\nclass Preview {\r\n  rootElement;\r\n  closeButton;\r\n\r\n  constructor(rootElement) {\r\n    this.rootElement = rootElement;\r\n    this.closeButton = this.rootElement.querySelector('#previewCloseButton');\r\n\r\n    this.setEventHandlers();\r\n  }\r\n\r\n  setEventHandlers() {\r\n    this.closeButton.addEventListener('click', this.close.bind(this));\r\n  }\r\n\r\n  close() {\r\n    this.rootElement.style.display = 'none';\r\n  }\r\n}\n\n//# sourceURL=webpack:///./resources/src/js/components/Preview.js?");
+
+/***/ }),
+
+/***/ "./resources/src/js/home.js":
+/*!**********************************!*\
+  !*** ./resources/src/js/home.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_Preview__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Preview */ \"./resources/src/js/components/Preview.js\");\n\r\n\r\nconst previewContainer = document.querySelector('#preview');\r\nconst preview = new _components_Preview__WEBPACK_IMPORTED_MODULE_0__.Preview(previewContainer);\r\n\r\nconst featuredDresses = document.querySelectorAll('#featuredDress');\r\nfeaturedDresses.forEach((dress) => {\r\n  dress.addEventListener('click', () => {\r\n    const wantedDressId = dress.dataset.id;\r\n    const wantedDress = window.dresses.find(dress => dress.id == wantedDressId);\r\n\r\n    console.log(wantedDress.image);\r\n  });\r\n});\n\n//# sourceURL=webpack:///./resources/src/js/home.js?");
 
 /***/ })
 
@@ -57,6 +77,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports

@@ -12,7 +12,7 @@
 
   <script defer src="/js/bundle.js"></script>
 
-  <title>Сёстры Солонко</title>
+  <title>Сёстры Солонко | Шоу-рум</title>
 </head>
 <body>
 

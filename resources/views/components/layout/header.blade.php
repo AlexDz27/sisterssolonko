@@ -1,4 +1,4 @@
-<header class="header mb-40">
+<header class="header mb-20">
   <div class="section-with-bar container mx-auto flex justify-between items-center py-8 mb-12">
     <div class="header__col">
       <button class="burger" type="button" aria-label="Открыть навигацию">
@@ -9,7 +9,7 @@
     </div>
 
     <a href="/">
-      <img src="/img/logo.png" alt="Логотип 'Сёстры Солонко'" height="120">
+      <img src="/images/logo.png" alt="Логотип 'Сёстры Солонко'" height="120">
     </a>
 
     <div class="header__col">
@@ -76,7 +76,7 @@
 
   <nav class="container mx-auto flex justify-center">
     <a class="button-look-at-dresses" href="#">
-      <span class="growing-underline">Смотреть платья</span>
+      <span class="growing-underline growing-underline--black">Смотреть платья</span>
     </a>
   </nav>
 </header>
